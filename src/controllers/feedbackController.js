@@ -49,7 +49,7 @@ export const createFeedback = async (req, res) => {
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `;
 
-        const [result] = await dbPool.promise().query(query, [
+        const [result] = await dbPool.query(query, [
             feedbackData.bus_number,
             feedbackData.bus_line,
             feedbackData.excessive_delay,
