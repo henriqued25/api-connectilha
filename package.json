@@ -1,0 +1,29 @@
+{
+    "name": "api-connectilha",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/henriqued25/api-connectilha.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/henriqued25/api-connectilha/issues"
+    },
+    "homepage": "https://github.com/henriqued25/api-connectilha#readme",
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "mysql2": "^3.14.1"
+    },
+    "type": "module"
+}
