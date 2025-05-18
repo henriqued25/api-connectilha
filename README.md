@@ -50,7 +50,6 @@ Siga estes passos para configurar a API localmente:
       DB_PASSWORD=sua_senha_mysql
       DB_NAME=connectilha_feedback
       DB_PORT=3306 # Porta padrão do MySQL
-      PORT=3000
       ```
     * **Importante:** O arquivo `.env` não deve ser versionado. Certifique-se de que ele está adicionado ao seu `.gitignore`.
 
@@ -64,7 +63,7 @@ npm run start
 
 Este comando irá executar o script de inicialização definido no seu arquivo `package.json`. Geralmente, este script inicia o servidor da API.
 
-Se você não tiver o script `start` configurado ou precisar executar o servidor diretamente, tente o seguinte comando:
+Se você precisar executar o servidor diretamente, tente o seguinte comando:
 
 ```bash
 node src/app.js
@@ -172,7 +171,7 @@ O `id` do feedback a ser excluído deve ser fornecido como um parâmetro de path
 
 **Respostas:**
 
-* **`200 OK`**: O feedback com o ID fornecido foi excluído com sucesso. O corpo da resposta conterá uma mensagem de sucesso, incluindo o ID excluído (formato dependente da sua implementação, ex: `{"message": "Feedback com ID 10 excluído com sucesso"}`).
+* **`200 OK`**: O feedback com o ID fornecido foi excluído com sucesso. O corpo da resposta conterá uma mensagem de sucesso, incluindo o ID excluído. `{"message": "Feedback com ID 10 excluído com sucesso"}`).
 
 ## Links Úteis
 
