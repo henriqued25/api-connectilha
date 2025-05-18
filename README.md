@@ -69,7 +69,7 @@ Se você precisar executar o servidor diretamente, tente o seguinte comando:
 node src/app.js
 ```
 
-A API estará rodando na porta especificada na variável de ambiente `PORT` (por padrão, `http://localhost:3000`). Certifique-se de que o seu banco de dados MySQL esteja rodando e configurado corretamente antes de iniciar a API.
+A API estará rodando na porta especificada na variável de ambiente `DB_PORT` (por padrão, `http://localhost:3306`).
 
 ## Endpoints da API
 
